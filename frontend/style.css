@@ -1,0 +1,135 @@
+/* General Body Styling */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f8b500, #fceabb);
+  color: #333;
+  transition: background 0.5s ease;
+  min-height: 100vh;
+}
+
+/* Main Container Styling */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Input, Select, Button Styling */
+input, select {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  background-color: #2e86de;
+  color: white;
+  font-size: 16px;
+  border: none;
+  margin: 10px 5px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b4f72;
+}
+
+/* Toggle Button Styling */
+#toggleDarkMode {
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* Expense Item Styling */
+.expense-item {
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Alert Box */
+.alert {
+  color: white;
+  background-color: #e74c3c;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .container {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .expense-item {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.dark-mode button {
+  background-color: #3498db;
+}
+
+.dark-mode button:hover {
+  background-color: #2980b9;
+}
+
+.dark-mode .delete-btn {
+  background-color: #e74c3c;
+}
